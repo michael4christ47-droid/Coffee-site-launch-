@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coffee House</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- LOADER (ONLY ONE & INSIDE BODY) -->
+<div class="loader">
+    <div class="coffee-logo">☕</div>
+</div>
+
+<header>
+    <div class="logo">Coffee</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Story</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <video autoplay muted loop playsinline class="video-bg">
+        <source src="coffee.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+
+    <div class="hero-box">
+        <h1>Freshly Roasted<br><span>COFFEE</span></h1>
+        <button>Shop Now</button>
+    </div>
+</section>
+
+<section class="categories">
+    <h2>Top Categories</h2>
+    <p>Explore The Most Bought Drinks This Week</p>
+
+    <div class="category-grid">
+        <div class="category-card">
+            <img src="hot-chocolate.jpg">
+            <h3>Hot Chocolate</h3>
+        </div>
+
+        <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" />
+            <h3>Espresso Coffee</h3>
+        </div>
+
+        <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" />
+            <h3>Mocha Coffee</h3>
+        </div>
+
+        <div class="category-card">
+            <img src="latte.jpg">
+            <h3>Latte Coffee</h3>
+        </div>
+    </div>
+</section>
+
+<section class="products">
+    <h2>Top Milk Shakes</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b" />
+            <h3>Biscoff Milkshake</h3>
+            <p>₹299</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e" />
+            <h3>Salted Caramel</h3>
+            <p>₹199</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80" />
+            <h3>Chocolate Deluxe</h3>
+            <p>₹349</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb" />
+            <h3>Classic Vanilla</h3>
+            <p>₹269</p>
+            <button>Buy Now</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="featured">
+    <h2>Featured Drinks</h2>
+    <p class="section-subtitle">
+        Our most loved handcrafted beverages made from premium roasted beans.
+    </p>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <span class="badge">Best Seller</span>
+            <img src="espresso.jpg">
+            <h3>Classic Espresso</h3>
+            <p class="description">
+                Rich, bold and intense flavor extracted from freshly roasted Arabica beans.
+            </p>
+            <div class="price-rating">
+                <span class="price">₹199</span>
+                <span class="rating">⭐ 4.8</span>
+            </div>
+            <button>Order Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="latte.jpg">
+            <h3>Creamy Latte</h3>
+            <p class="description">
+                Smooth espresso blended with steamed milk and silky microfoam.
+            </p>
+            <div class="price-rating">
+                <span class="price">₹249</span>
+                <span class="rating">⭐ 4.7</span>
+            </div>
+            <button>Order Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="mocha.jpg">
+            <h3>Chocolate Mocha</h3>
+            <p class="description">
+                A delightful mix of espresso, dark chocolate and creamy milk.
+            </p>
+            <div class="price-rating">
+                <span class="price">₹269</span>
+                <span class="rating">⭐ 4.9</span>
+            </div>
+            <button>Order Now</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+
+        <div>
+            <h3>Quick Links</h3>
+            <p>Home</p>
+            <p>Menu</p>
+            <p>Contact</p>
+        </div>
+
+        <div>
+            <h3>Contact Us</h3>
+            <p>Email: support@blackcoffee.in</p>
+            <p>Phone: +91 98765 43210</p>
+            <p>Location: Mumbai, Maharashtra, India</p>
+        </div>
+
+        <div>
+            <h3>Follow Us</h3>
+            <p>Instagram</p>
+            <p>Facebook</p>
+            <p>YouTube</p>
+        </div>
+
+    </div>
+</footer>
+
+<img src="beans.png" class="beans beans-left">
+<img src="beans.png" class="beans beans-right">
+
+<script>
+window.addEventListener("load", function() {
+    const loader = document.querySelector(".loader");
+    loader.classList.add("hidden");
+});
+</script>
+<script>
+window.addEventListener("scroll", function() {
+    const reveals = document.querySelectorAll(".reveal");
+
+    reveals.forEach((el) => {
+        const windowHeight = window.innerHeight;
+        const elementTop = el.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - 100) {
+            el.classList.add("active");
+        }
+    });
+});
+</script>
+</body>
+</html>
